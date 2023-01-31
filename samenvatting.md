@@ -1,0 +1,1 @@
+Deze handreiking is geschreven om leveranciers van de Rijksoverheid een richtlijn te geven over de minimale factuurgegevens die door de Rijksoverheid geëist worden in een elektronische factuur (e-factuur). Door deze richtlijn te volgen worden ingestuurde facturen gemakkelijker verwerkt in de administratie en hierdoor sneller uitbetaald.
