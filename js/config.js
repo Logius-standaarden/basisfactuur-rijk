@@ -18,7 +18,6 @@ var respecConfig = {
       {
           "handreiking-basisfactuur-rijk": "",
           "overzicht-elementen-basisfactuur-rijk": "",
-          "hulp-e-factuur-sturen-naar-de-overheid": "informative",
       },
   editors:
       [
