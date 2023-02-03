@@ -40,7 +40,7 @@ var respecConfig = {
               companyURL: "https://logius.nl/diensten/e-procurement",
           }
       ],
-  github: "https://github.com/Logius-standaarden/ep-basisorder-rijk",
+  github: "https://github.com/Logius-standaarden/ep-basisfactuur-rijk",
 
 
   // Controls if linked "§" section markers are added to a document
