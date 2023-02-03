@@ -1,1 +1,0 @@
-# Overzicht verplichte en optionele elementen voor de basisfactuur Rijk
