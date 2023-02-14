@@ -3,7 +3,7 @@
 <em>Voor leveranciers van de Rijksoverheid die e-facturen sturen.</em>
 </p>
 
-## Wat de handreiking basisfactuur Rijk?
+## Wat is de handreiking basisfactuur Rijk?
 De handreiking basisfactuur Rijk beschrijft welke factuurgegevens minimaal vermeld dienen te zijn in een e-factuur. Voor circa 90% van de facturen aan de Rijksoverheid zijn de factuurgegevens die beschreven zijn in de handreiking basisfactuur Rijk voldoende om te kunnen verwerken. In de overige gevallen worden aanvullende factuurgegevens vereist die beschreven staan in het contract dat is aangegaan door de leverancier met de Rijksoverheid.
 
 ## Opmaken basisfactuur Rijk
