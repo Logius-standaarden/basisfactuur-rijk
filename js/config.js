@@ -6,6 +6,8 @@ var respecConfig = {
   specStatus: "WV",
   //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "HR",
+  sotdCommitteeNameNL: "de EG eFacturatie",
+  sotdCommitteeNameEN: "the TC eFacturatie",
   pubDomain: "ep",
   shortName: "basisfactuur-rijk",
   publishDate: "2022-12-13",
