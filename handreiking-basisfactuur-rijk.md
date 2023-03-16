@@ -14,8 +14,7 @@ Laat u goed informeren door uw klant (de overheidsorganisatie) over de referenti
 Indien uw e-factuur niet alle vereiste factuurgegevens bevat zal deze automatisch geweigerd worden. U wordt hierover geïnformeerd via een e-mail naar het e-mailadres dat u bij uw leveranciersgegevens vermeld heeft in de e-factuur. In de e-mail staat vermeld welke factuurgegevens ontbreken.
 
 ## Hulp bij e-factuur sturen naar de overheid
-Bent u ondernemer en wilt u hulp bij het sturen van een e-factuur? U kunt terecht bij de [Helpdesk e-factureren](https://www.helpdesk-efactureren.nl/). Weet u niet welke manier van e-factureren het beste bij u past? Vul dan de [https://regelhulpenvoorbedrijven.nl/e-factureren/](e-factuurwijzer) in.
-
+Bent u ondernemer en wilt u hulp bij het sturen van een e-factuur? U kunt terecht bij de [Helpdesk e-factureren](https://www.helpdesk-efactureren.nl/). Weet u niet welke manier van e-factureren het beste bij u past? Vul dan de [e-factuurwijzer](https://regelhulpenvoorbedrijven.nl/e-factureren/) in.
 
 ## Technische implementatie basisfactuur Rijk
 Naast deze handreiking zijn er aanvullende documenten die helpen bij de technische implementatie. Deze technische documentatie is bedoeld voor softwareleveranciers en serviceproviders.
