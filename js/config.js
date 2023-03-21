@@ -60,7 +60,7 @@ var respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: "handreiking-basisorder-rijk-v0.8.pdf",
+          uri: "handreiking-basisfactuur-rijk-v1.0.1.pdf",
       },
   ],
 };
