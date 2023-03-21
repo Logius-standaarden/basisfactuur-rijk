@@ -13,8 +13,8 @@ var respecConfig = {
   publishDate: "2022-12-13",
   publishVersion: "december 2022",
   title: "Handreiking basisfactuur Rijk",
-  previousPublishVersion: "(none)",
-  previousPublishDate: "(none)",
+  previousPublishVersion: "Geen",
+  previousPublishDate: "1970-01-01",
   previousMaturity: "WV",
   content:
       {
