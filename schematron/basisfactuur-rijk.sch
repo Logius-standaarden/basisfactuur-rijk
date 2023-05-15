@@ -5,8 +5,8 @@
   
     Versie basisfactuur Rijk - 1.0.0 (december 2022)
     Datum basisfactuur Rijk  - 14 december 2022
-    Versie schematron        - 0.8.1
-    Datum schematron         - 13 april 2023
+    Versie schematron        - 0.9.0
+    Datum schematron         - 14 april 2023
   
   -->
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -15,18 +15,18 @@
   <ns prefix="doc" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
   <pattern id="cardinality-redefines">
     <rule context="doc:Invoice">
-        <assert test="count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &gt;= 1 and count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &lt;= 1">BR-NL-BFR-30: Het veld 'doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID' dient precies 1x voor te komen. Vul dit veld met de inhoud van 'Basisfactuur 4.1 - IBAN' (verplicht).</assert>
+        <assert test="count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &gt;= 1 and count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &lt;= 1">BR-NL-BFR-3: Het veld 'doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID' is verplicht. Vul dit veld met de inhoud van 'Basisfactuur 4.1 - IBAN'.</assert>
     </rule>
   </pattern>
   <pattern id="type-restrictions">
     <rule context="doc:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact">
-      <assert test="string-length(cbc:ElectronicMail) > 0">BR-NL-BFR-19: Het veld 'doc:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail' is leeg of bestaat niet. Vul dit veld met de inhoud van 'Basisfactuur 2.8 - Contactpersoon e-mailadres' (verplicht).</assert>
+      <assert test="string-length(cbc:ElectronicMail) > 0">BR-NL-BFR-1: Het veld 'doc:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail' is verplicht. Vul dit veld met de inhoud van 'Basisfactuur 2.8 - Contactpersoon e-mailadres'.</assert>
     </rule>
     <rule context="doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity">
-      <assert test="cbc:CompanyID[@schemeID = '0190']">BR-NL-BFR-22: Het attribuut 'schemeID' van veld 'doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID' moet altijd de waarde '0190' bevatten.</assert>
+      <assert test="cbc:CompanyID[@schemeID = '0190']">BR-NL-BFR-2: Het attribuut 'schemeID' van veld 'doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID' moet altijd de waarde '0190' bevatten.</assert>
     </rule>
     <rule context="doc:Invoice/cac:TaxTotal/cac:TaxSubtotal">
-      <assert test="cbc:TaxAmount[@currencyID eq //doc:Invoice/cbc:DocumentCurrencyCode]">BR-NL-BFR-37: Het attribuut 'currencyID' van het element 'doc:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount' moet gelijk zijn aan de waarde van 'doc:Invoice/cbc:DocumentCurrencyCode' (Basisfactuur 1.4 valuta).</assert>
+      <assert test="cbc:TaxAmount[@currencyID eq //doc:Invoice/cbc:DocumentCurrencyCode]">BR-NL-BFR-4: Het attribuut 'currencyID' van het element 'doc:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount' moet gelijk zijn aan de waarde van 'doc:Invoice/cbc:DocumentCurrencyCode' (Basisfactuur 1.4 valuta).</assert>
     </rule>
   </pattern>
 </schema>
