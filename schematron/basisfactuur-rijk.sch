@@ -5,8 +5,8 @@
   
     Versie basisfactuur Rijk - 1.0.0 (december 2022)
     Datum basisfactuur Rijk  - 14 december 2022
-    Versie schematron        - 0.8.0
-    Datum schematron         - 11 april 2023
+    Versie schematron        - 0.8.1
+    Datum schematron         - 13 april 2023
   
   -->
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -14,12 +14,11 @@
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="doc" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
   <pattern id="cardinality-redefines">
-    <!-- BR-NL-BFR-30 -->
+    <rule context="doc:Invoice">
+        <assert test="count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &gt;= 1 and count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) &lt;= 1">BR-NL-BFR-30: Het veld 'doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID' dient precies 1x voor te komen. Vul dit veld met de inhoud van 'Basisfactuur 4.1 - IBAN' (verplicht).</assert>
+    </rule>
   </pattern>
   <pattern id="type-restrictions">
-    <rule context="doc:Invoice">
-      <assert test="empty(cbc:UBLVersionID) or (cbc:UBLVersionID='2.1')">BR-NL-BFR-1: Indien UBLVersionID gevuld is, mag het alleen de waarde '2.1' bevatten.</assert>
-    </rule>
     <rule context="doc:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact">
       <assert test="string-length(cbc:ElectronicMail) > 0">BR-NL-BFR-19: Het veld 'doc:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail' is leeg of bestaat niet. Vul dit veld met de inhoud van 'Basisfactuur 2.8 - Contactpersoon e-mailadres' (verplicht).</assert>
     </rule>
