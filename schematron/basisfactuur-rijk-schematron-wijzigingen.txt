@@ -1,0 +1,19 @@
+Basisfactuur rijk - Schematron wijzigingen
+==========================================
+
+Datum       Versie  Auteur  Wat
+----------  ------  ------  --------------------------------------------------------------------------------------------------
+2023-05-15  0.9.1   MvB     * Alle contexten absoluut gemaakt.
+                            * Bij elke BR kort opgenomen wat de inhoud van de regel behelst. Inclusief de naam van test-xml.
+                            * BR-NL-BFR-1 verplaatst van pattern id="type-restrictions" naar id="cardinality-redefines".
+                            * BR-NL-BFR-3 test vereenvoudigd.
+                            * BR-NL-BFR-2 en BR-NL-BFR-4 context vereenvoudigd én extra informatie over de gebruikte waarden
+                              opgenomen in de melding.
+2023-04-14  0.9.0   MvB     * Volgnummeraanpassingen zodat er nu 4 opeenvolgende meldingsnummers zijn in plaats van op
+                              testcase gebaseerde meldingsnummers (19 → 1; 22 → 2; 30 → 3; 37 → 4);
+                            * Meldingen zijn iets generieker gemaakt.
+                            * Versie geschikt voor eindbeoordeling vóór publicatie. 
+2023-04-13  0.8.1   MvB     * Validatie van optioneel element doc:Invoice/cbc:UBLVersionID verwijderd;
+                            * Validatie BR-NL-BFR-30 daadwerkelijk toegevoegd.
+2023-04-11  0.8.0   MvB     * Wijzigingen naar aanleiding van extra tests eerder in de keten (Peppol BIS).
+2023-03-10  0.7.0   MvB     * Initiële versie.
