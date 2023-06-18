@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.7.1">
+<meta name="generator" content="ReSpec 34.1.1">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
@@ -22,6 +22,7 @@ dfn{cursor:pointer}
 .dfn-panel li{margin-left:1em}
 .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
 </style>
+  
   
   
   
@@ -82,9 +83,8 @@ details.respec-tests-details>ul{width:100%;margin-top:-.3em}
 details.respec-tests-details>li{padding-left:1em}
 .self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
 aside.example .marker>a.self-link{color:inherit}
-.header-wrapper{display:flex;align-items:baseline}
-:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
-:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+.header-wrapper{display:flex;align-items:baseline;position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
 :is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
 :is(h2,h3)+a.self-link{top:-.2em}
 :is(h4,h5,h6)+a.self-link::before{color:#000}
@@ -108,54 +108,6 @@ dd{margin-left:0}
   }
 </style>
 <script id="initialUserConfig" type="application/json">{
-  "useLogo": true,
-  "useLabel": true,
-  "license": "cc0",
-  "specStatus": "WV",
-  "specType": "HR",
-  "sotdCommitteeNameNL": "de EG eFacturatie",
-  "sotdCommitteeNameEN": "the TC eFacturatie",
-  "pubDomain": "ep",
-  "shortName": "basisfactuur-rijk",
-  "publishDate": "2022-12-13",
-  "publishVersion": "december 2022",
-  "title": "Handreiking basisfactuur Rijk",
-  "previousPublishVersion": "0.0.1",
-  "previousPublishDate": "1970-01-01",
-  "previousMaturity": "BP",
-  "content": {
-    "handreiking-basisfactuur-rijk": "",
-    "overzicht-elementen-basisfactuur-rijk": ""
-  },
-  "editors": [
-    {
-      "name": "MB",
-      "company": "Logius",
-      "companyURL": "https://www.logius.nl"
-    },
-    {
-      "name": "MvB",
-      "company": "Logius",
-      "companyURL": "https://www.logius.nl"
-    }
-  ],
-  "authors": [
-    {
-      "name": "Logius Standaarden - team e-procurement",
-      "company": "Logius",
-      "companyURL": "https://logius.nl/diensten/e-procurement"
-    }
-  ],
-  "github": "https://github.com/Logius-standaarden/ep-basisfactuur-rijk",
-  "addSectionLinks": true,
-  "nl_addReleaseTagTitle": false,
-  "nl_markdownEmbedImageInFigure": true,
-  "alternateFormats": [
-    {
-      "label": "pdf",
-      "uri": "handreiking-basisorder-rijk-v0.8.pdf"
-    }
-  ],
   "nl_organisationName": "Logius",
   "nl_organisationStylesURL": "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
   "nl_organisationPublishURL": "https://gitdocumentatie.logius.nl/publicatie/",
@@ -204,6 +156,10 @@ dd{margin-left:0}
     "-",
     "publishDate"
   ],
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc0",
+  "addSectionLinks": true,
   "localizationStrings": {
     "en": {
       "wv": "Draft",
@@ -337,7 +293,49 @@ dd{margin-left:0}
       ],
       "date": "June 2013"
     }
-  }
+  },
+  "specStatus": "WV",
+  "specType": "HR",
+  "pubDomain": "ep",
+  "shortName": "basisfactuur-rijk",
+  "publishDate": "2023-06-18",
+  "publishVersion": "v1.0.6",
+  "title": "Handreiking basisfactuur Rijk",
+  "previousPublishVersion": "december 2022",
+  "previousPublishDate": "2022-12-13",
+  "previousMaturity": "def",
+  "content": {
+    "handreiking-basisfactuur-rijk": "",
+    "overzicht-elementen-basisfactuur-rijk": ""
+  },
+  "editors": [
+    {
+      "name": "MB",
+      "company": "Logius",
+      "companyURL": "https://www.logius.nl"
+    },
+    {
+      "name": "MvB",
+      "company": "Logius",
+      "companyURL": "https://www.logius.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Logius Standaarden - team e-procurement",
+      "company": "Logius",
+      "companyURL": "https://logius.nl/diensten/e-procurement"
+    }
+  ],
+  "github": "https://github.com/Logius-standaarden/ep-basisfactuur-rijk",
+  "nl_addReleaseTagTitle": false,
+  "nl_markdownEmbedImageInFigure": true,
+  "alternateFormats": [
+    {
+      "label": "pdf",
+      "uri": "handreiking-basisfactuur-rijk-v1.0.6.pdf"
+    }
+  ]
 }</script>
 <link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/base.css"></head>
 
@@ -348,19 +346,20 @@ dd{margin-left:0}
     <h2>
       Logius Handreiking<br>
       Werkversie
-      <time class="dt-published" datetime="2022-12-13">21 maart 2023</time>
+      <time class="dt-published" datetime="2023-06-18">18 juni 2023</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://gitdocumentatie.logius.nl/publicatie/ep/wv-hr-basisfactuur-rijk-2022-12-13">https://gitdocumentatie.logius.nl/publicatie/ep/wv-hr-basisfactuur-rijk-2022-12-13</a>
-            </dd><dt>Laatst gepubliceerde versie:</dt><dd>
+              <a class="u-url status" href="https://github.com/logius-standaarden/ep-basisfactuur-rijk/">https://github.com/logius-standaarden/ep-basisfactuur-rijk/</a>
+            </dd>
+      <dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://gitdocumentatie.logius.nl/publicatie/ep/">https://gitdocumentatie.logius.nl/publicatie/ep/</a>
             </dd>
       <dt>Laatste werkversie:</dt><dd><a href="https://github.com/logius-standaarden/ep-basisfactuur-rijk/">https://github.com/logius-standaarden/ep-basisfactuur-rijk/</a></dd>
       
       
       
-      <dt>Vorige versie</dt><dd><a href="https://gitdocumentatie.logius.nl/publicatie/ep/bp-hr-basisfactuur-rijk-2022-12-13">https://gitdocumentatie.logius.nl/publicatie/ep/bp-hr-basisfactuur-rijk-2022-12-13</a></dd>
+      <dt>Vorige versie</dt><dd><a href="https://gitdocumentatie.logius.nl/publicatie/ep/def-hr-basisfactuur-rijk-20230618">https://gitdocumentatie.logius.nl/publicatie/ep/def-hr-basisfactuur-rijk-20230618</a></dd>
       
       <dt>Redacteurs:</dt>
       <dd class="editor p-author h-card vcard">
@@ -386,17 +385,17 @@ dd{margin-left:0}
     
     <p>
           Dit document is ook beschikbaar in dit niet-normatieve formaat:
-          <a rel="alternate" href="handreiking-basisorder-rijk-v0.8.pdf">pdf</a>
+          <a rel="alternate" href="handreiking-basisfactuur-rijk-v1.0.6.pdf">pdf</a>
         </p>
     <p class="copyright">
           Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/" class="subfoot">Creative Commons 0 Public Domain Dedication</a>.
+          <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/" class="subfoot"><img style="float: left; padding-right: 5px;" src="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/CC-Licentie.svg" alt="Logo Creative Commons 0 Public Domain Dedication"><br> Creative Commons 0 Public Domain Dedication</a>
         </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Deze handreiking is geschreven om leveranciers van de Rijksoverheid een richtlijn te geven over de minimale factuurgegevens die door de Rijksoverheid geëist worden in een elektronische factuur (e-factuur). Door deze richtlijn te volgen worden ingestuurde facturen gemakkelijker verwerkt in de administratie en hierdoor sneller uitbetaald.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door de EG eFacturatie goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#handreiking-basisfactuur-rijk"><bdi class="secno">1. </bdi>Handreiking basisfactuur Rijk</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-de-handreiking-basisfactuur-rijk"><bdi class="secno">1.1 </bdi>Wat is de handreiking basisfactuur Rijk?</a></li><li class="tocline"><a class="tocxref" href="#opmaken-basisfactuur-rijk"><bdi class="secno">1.2 </bdi>Opmaken basisfactuur Rijk</a></li><li class="tocline"><a class="tocxref" href="#hulp-bij-e-factuur-sturen-naar-de-overheid"><bdi class="secno">1.3 </bdi>Hulp bij e-factuur sturen naar de overheid</a></li><li class="tocline"><a class="tocxref" href="#technische-implementatie-basisfactuur-rijk"><bdi class="secno">1.4 </bdi>Technische implementatie basisfactuur Rijk</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht-verplichte-en-optionele-elementen-voor-de-basisfactuur-rijk"><bdi class="secno">2. </bdi>Overzicht verplichte en optionele elementen voor de basisfactuur Rijk</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gegevens-op-hoofdniveau"><bdi class="secno">2.1 </bdi>Gegevens op hoofdniveau</a></li><li class="tocline"><a class="tocxref" href="#gegevens-leverancierpartij"><bdi class="secno">2.2 </bdi>Gegevens leverancierpartij</a></li><li class="tocline"><a class="tocxref" href="#gegevens-klantpartij"><bdi class="secno">2.3 </bdi>Gegevens klantpartij</a></li><li class="tocline"><a class="tocxref" href="#betalingsgegevens"><bdi class="secno">2.4 </bdi>Betalingsgegevens</a></li><li class="tocline"><a class="tocxref" href="#belasting"><bdi class="secno">2.5 </bdi>Belasting</a></li><li class="tocline"><a class="tocxref" href="#totalen"><bdi class="secno">2.6 </bdi>Totalen</a></li><li class="tocline"><a class="tocxref" href="#factuurregels"><bdi class="secno">2.7 </bdi>Factuurregels</a></li><li class="tocline"><a class="tocxref" href="#tijdkaartgegevens-alleen-bij-inhuur"><bdi class="secno">2.8 </bdi>Tijdkaartgegevens (alleen bij inhuur)</a></li></ol></li></ol></nav><section id="handreiking-basisfactuur-rijk"><div class="header-wrapper"><h2 id="x1-handreiking-basisfactuur-rijk"><bdi class="secno">1. </bdi>Handreiking basisfactuur Rijk</h2><a class="self-link" href="#handreiking-basisfactuur-rijk" aria-label="Permalink for Section 1."></a></div>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door de EG eFacturatie goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#handreiking-basisfactuur-rijk"><bdi class="secno">1. </bdi>Handreiking basisfactuur Rijk</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-de-handreiking-basisfactuur-rijk"><bdi class="secno">1.1 </bdi>Wat is de handreiking basisfactuur Rijk?</a></li><li class="tocline"><a class="tocxref" href="#opmaken-basisfactuur-rijk"><bdi class="secno">1.2 </bdi>Opmaken basisfactuur Rijk</a></li><li class="tocline"><a class="tocxref" href="#hulp-bij-e-factuur-sturen-naar-de-rijksoverheid"><bdi class="secno">1.3 </bdi>Hulp bij e-factuur sturen naar de Rijksoverheid</a></li><li class="tocline"><a class="tocxref" href="#technische-implementatie-basisfactuur-rijk"><bdi class="secno">1.4 </bdi>Technische implementatie basisfactuur Rijk</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht-verplichte-en-optionele-elementen-voor-de-basisfactuur-rijk"><bdi class="secno">2. </bdi>Overzicht verplichte en optionele elementen voor de basisfactuur Rijk</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gegevens-op-hoofdniveau"><bdi class="secno">2.1 </bdi>Gegevens op hoofdniveau</a></li><li class="tocline"><a class="tocxref" href="#gegevens-leverancierpartij"><bdi class="secno">2.2 </bdi>Gegevens leverancierpartij</a></li><li class="tocline"><a class="tocxref" href="#gegevens-klantpartij"><bdi class="secno">2.3 </bdi>Gegevens klantpartij</a></li><li class="tocline"><a class="tocxref" href="#betalingsgegevens"><bdi class="secno">2.4 </bdi>Betalingsgegevens</a></li><li class="tocline"><a class="tocxref" href="#belasting"><bdi class="secno">2.5 </bdi>Belasting</a></li><li class="tocline"><a class="tocxref" href="#totalen"><bdi class="secno">2.6 </bdi>Totalen</a></li><li class="tocline"><a class="tocxref" href="#factuurregels"><bdi class="secno">2.7 </bdi>Factuurregels</a></li><li class="tocline"><a class="tocxref" href="#tijdkaartgegevens-alleen-bij-inhuur"><bdi class="secno">2.8 </bdi>Tijdkaartgegevens (alleen bij inhuur)</a></li></ol></li></ol></nav><section id="handreiking-basisfactuur-rijk"><div class="header-wrapper"><h2 id="x1-handreiking-basisfactuur-rijk"><bdi class="secno">1. </bdi>Handreiking basisfactuur Rijk</h2><a class="self-link" href="#handreiking-basisfactuur-rijk" aria-label="Permalink for Section 1."></a></div>
 <p class="addition" title="Ondertitel">
 <em>Voor leveranciers van de Rijksoverheid die e-facturen sturen.</em>
 </p>
@@ -407,11 +406,11 @@ dd{margin-left:0}
 <p>In het overzicht hieronder vindt u alle factuurgegevens die op een basisfactuur aan het Rijk vermeld moeten worden.</p>
 <p>Laat u goed informeren door uw klant (de overheidsorganisatie) over de referentie of het ordernummer (zie 1.5) op de factuur en welke invulinstructie moet worden gevolgd. Het vermelden van een onjuiste referentie (bijvoorbeeld met een prefix, spaties, punten of een verkeerd ordernummer) kan leiden tot een langere verwerkingstijd van uw e-factuur. Bijlagen kunnen worden toegevoegd met een maximum van 9 en een totale maximum bestandsgrootte van 20 MB. De opname van grote (1000+) hoeveelheden regels en/of regels met een 0 waarde is ongewenst en kan leiden tot verwerkingsproblemen.</p>
 <p>Indien uw e-factuur niet alle vereiste factuurgegevens bevat zal deze automatisch geweigerd worden. U wordt hierover geïnformeerd via een e-mail naar het e-mailadres dat u bij uw leveranciersgegevens vermeld heeft in de e-factuur. In de e-mail staat vermeld welke factuurgegevens ontbreken.</p>
-</section><section id="hulp-bij-e-factuur-sturen-naar-de-overheid"><div class="header-wrapper"><h3 id="x1-3-hulp-bij-e-factuur-sturen-naar-de-overheid"><bdi class="secno">1.3 </bdi>Hulp bij e-factuur sturen naar de overheid</h3><a class="self-link" href="#hulp-bij-e-factuur-sturen-naar-de-overheid" aria-label="Permalink for Section 1.3"></a></div>
-<p>Bent u ondernemer en wilt u hulp bij het sturen van een e-factuur? U kunt terecht bij de <a href="https://www.helpdesk-efactureren.nl/">Helpdesk e-factureren</a>. Weet u niet welke manier van e-factureren het beste bij u past? Vul dan de <a href="https://regelhulpenvoorbedrijven.nl/e-factureren/">e-factuurwijzer</a> in.</p>
+</section><section id="hulp-bij-e-factuur-sturen-naar-de-rijksoverheid"><div class="header-wrapper"><h3 id="x1-3-hulp-bij-e-factuur-sturen-naar-de-rijksoverheid"><bdi class="secno">1.3 </bdi>Hulp bij e-factuur sturen naar de Rijksoverheid</h3><a class="self-link" href="#hulp-bij-e-factuur-sturen-naar-de-rijksoverheid" aria-label="Permalink for Section 1.3"></a></div>
+<p>Meer informatie over e-factureren aan de Rijksoverheid vindt u <a href="https://www.helpdesk-efactureren.nl/">hier</a>. Bijvoorbeeld over de verschillende manieren om een e-factuur te versturen.</p>
 </section><section id="technische-implementatie-basisfactuur-rijk"><div class="header-wrapper"><h3 id="x1-4-technische-implementatie-basisfactuur-rijk"><bdi class="secno">1.4 </bdi>Technische implementatie basisfactuur Rijk</h3><a class="self-link" href="#technische-implementatie-basisfactuur-rijk" aria-label="Permalink for Section 1.4"></a></div>
 <p>Naast deze handreiking zijn er aanvullende documenten die helpen bij de technische implementatie. Deze technische documentatie is bedoeld voor softwareleveranciers en serviceproviders.</p>
-<p>U vindt dit als <a href="https://logius.nl/domeinen/gegevensuitwisseling/e-factureren/documentatie">zip-bestand bij de documentatie</a>. In deze Technische implementatie basisfactuur Rijk zitten de berichtspecificaties en voorbeeldbestanden van de door de Rijksoverheid ondersteunde standaarden (Peppol BIS 3, NLCIUS, UBL-OHNL).</p>
+<p>U vindt dit als <a href="https://github.com/Logius-standaarden/ep-basisfactuur-rijk/releases/latest">zip-bestand bij de documentatie</a>. In deze Technische implementatie basisfactuur Rijk zitten de berichtspecificaties en voorbeeldbestanden van de door de Rijksoverheid ondersteunde standaarden (Peppol BIS 3, NLCIUS, UBL-OHNL).</p>
 </section></section><section id="overzicht-verplichte-en-optionele-elementen-voor-de-basisfactuur-rijk"><div class="header-wrapper"><h2 id="x2-overzicht-verplichte-en-optionele-elementen-voor-de-basisfactuur-rijk"><bdi class="secno">2. </bdi>Overzicht verplichte en optionele elementen voor de basisfactuur Rijk</h2><a class="self-link" href="#overzicht-verplichte-en-optionele-elementen-voor-de-basisfactuur-rijk" aria-label="Permalink for Section 2."></a></div>
 <section id="gegevens-op-hoofdniveau"><div class="header-wrapper"><h3 id="x2-1-gegevens-op-hoofdniveau"><bdi class="secno">2.1 </bdi>Gegevens op hoofdniveau</h3><a class="self-link" href="#gegevens-op-hoofdniveau" aria-label="Permalink for Section 2.1"></a></div>
 <table class="simple">
