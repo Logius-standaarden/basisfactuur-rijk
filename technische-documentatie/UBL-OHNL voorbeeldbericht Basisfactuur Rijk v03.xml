@@ -1,0 +1,180 @@
+<doc:Invoice xmlns:doc="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:nl-cac="urn:digi-inkoop:ubl:2.0:NL:1.8:UBL-NL-CommonAggregateComponents-2" xmlns:nl-cbc="urn:digi-inkoop:ubl:2.0:NL:1.7:UBL-NL-CommonBasicComponents-2" xmlns:xalan="http://xml.apache.org/xalan" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 ../xsdrt/maindoc/Invoice.xsd urn:digi-inkoop:ubl:2.0:NL:1.7:UBL-NL-CommonBasicComponents-2 ../xsdrt/common/UBL-CommonBasicComponents-2.0-NL-1.7.xsd">
+	<cbc:UBLVersionID>2.0</cbc:UBLVersionID><!--De versie van de UBL standaard die van toepassing is op dit bericht-->
+	<cbc:CustomizationID>1.9</cbc:CustomizationID><!--De versie van de OHNL standaard die van toepassing is op dit bericht-->
+	<cbc:ProfileID>NL</cbc:ProfileID>
+	<cbc:ID>factuurnummer1</cbc:ID><!--Hier vult u 'uw factuurnummer'--> 
+	<cbc:IssueDate>2017-11-06</cbc:IssueDate><!--Hier vult u 'uw factuurdatum'--> 
+	<cbc:Note>Omschrijving die op de kop van de factuur terecht komt</cbc:Note><!--Niet verplicht, maar de plek om een factuuromschrijving te geven--> 
+	<cbc:DocumentCurrencyCode 
+		listID="ISO 4217 Alpha" listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listName="Currency" listVersionID="2001" listURI="http://docs.oasis-open.org/ubl/os-UBL-2.0-update/cl/gc/cefact/CurrencyCode-2.0.gc"
+		listSchemeURI="urn:un:unece:uncefact:codelist:specification:54217">EUR
+	</cbc:DocumentCurrencyCode><!--Hier vult u de valutacode die van toepassing is op de factuur-->
+	<cac:OrderReference>
+		<cbc:ID>40000695</cbc:ID><!--Hier vult u altijd het ordernummer of de referentie van de factuur. Zorg dat bij u bekend is welke referentie de ontvanger verwacht--> 
+	</cac:OrderReference>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyName="KvK" schemeAgencyID="NL">30097265</cbc:ID><!--Het KvKnummer van de leverancier-->
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyName="BTW" schemeAgencyID="NL">NL73847292B01</cbc:ID><!--Het BTWnummer van de leverancier-->
+			</cac:PartyIdentification>			
+			<cac:PartyName>
+				<cbc:Name>Naam Leverancier BV</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cac:RegistrationAddress>
+					<cbc:StreetName>Vestigingsadres leverancier 7</cbc:StreetName>
+					<cbc:CityName>Amsterdam</cbc:CityName>
+					<cbc:PostalZone>1234 AA</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode 
+						listID="ISO3166-1" listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listName="Country" listVersionID="0.3" listURI="http://docs.oasis-open.org/ubl/os-UBL-2.0-update/cl/gc/default/CountryIdentificationCode-2.0.gc" 
+						listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode">NL
+					</cbc:IdentificationCode>
+				</cac:Country>
+				</cac:RegistrationAddress>
+				</cac:PartyLegalEntity>
+				<cac:Contact>
+					<cbc:Name>Piet@leverancierbv.nl</cbc:Name><!--De naam of het emailadres waar een eventuele bevestiging of afwijzing naartoe gestuurd kan worden-->
+					<cbc:ElectronicMail>Piet@leverancierbv.nl</cbc:ElectronicMail><!--Het emailadres waar een eventuele bevestiging of afwijzing naartoe gestuurd kan worden-->
+				</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyName="OIN" schemeAgencyID="NL">00000001003227522000</cbc:ID><!--Het OIN-nummer van de Overheidsorganisatie--> 
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Naam Overheidsorganisatie</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cac:RegistrationAddress>
+					<cbc:StreetName>PietjePreciesstraat 9</cbc:StreetName>
+					<cbc:CityName>Den Haag</cbc:CityName>
+					<cbc:PostalZone>9876 BB</cbc:PostalZone>
+					<cac:Country>
+					<cbc:IdentificationCode 
+						listID="ISO3166-1" listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listName="Country" listVersionID="0.3" listURI="http://docs.oasis-open.org/ubl/os-UBL-2.0-update/cl/gc/default/CountryIdentificationCode-2.0.gc" 
+						listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode">NL
+					</cbc:IdentificationCode>
+				</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+<cac:Delivery>
+	<cbc:ActualDeliveryDate>2017-10-20</cbc:ActualDeliveryDate>
+</cac:Delivery> 
+		<cac:PaymentMeans>
+		<cbc:PaymentMeansCode 
+			listID="UN/ECE 4461" listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listName="Payment Means" listVersionID="D03A" listURI="http://docs.oasis-open.org/ubl/os-UBL-2.0-update/cl/gc/default/PaymentMeansCode-2.0.gc"
+			listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:PaymentMeansCode">42
+		</cbc:PaymentMeansCode>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>NL87INGB0123456789</cbc:ID><!--Het IBAN van de leverancier-->
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>	
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="EUR">27.00</cbc:TaxAmount><!--Hier vult u het totale belastingbedag van de order--> 
+		<cac:TaxSubtotal><!--In deze container en onderliggende velden vult u het totale belastingbedag van de order per BTW categorie-->
+			<cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount> 
+			<cbc:TaxAmount currencyID="EUR">21.00</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:Percent>21</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:Name>BTW</cbc:Name>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal><!--In deze container en onderliggende velden vult u het totale belastingbedag van de order per BTW categorie-->
+			<cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount> 
+			<cbc:TaxAmount currencyID="EUR">6.00</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:Name>BTW</cbc:Name>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>		
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="EUR">200.00</cbc:LineExtensionAmount><!--Totaal factuurbedrag exclusief BTW--> 
+		<cbc:TaxExclusiveAmount currencyID="EUR">200.00</cbc:TaxExclusiveAmount><!--Totaal factuurbedrag exclusief BTW--> 
+		<cbc:TaxInclusiveAmount currencyID="EUR">227.00</cbc:TaxInclusiveAmount><!--Totaal factuurbedrag inclusief BTW--> 
+		<cbc:PayableAmount currencyID="EUR">227.00</cbc:PayableAmount><!--Totaal factuurbedrag inclusief BTW--> 
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID><!--Regelnummer van de factuur-->
+		<cbc:InvoicedQuantity unitCode="EA">20</cbc:InvoicedQuantity><!--Hier vult u het aantal stuks dat u wilt factureren-->
+		<cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount><!--InvoicedQuantity x PriceAmount (exclusief BTW)-->
+		<cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID><!--Aanbevolen om hier het regelnummer van de order te vullen indien bekend--> 
+		<cac:OrderReference>
+			<cbc:ID>40000695</cbc:ID><!--Hier vult u altijd het ordernummer of de referentie van de factuur. Zorg dat bij u bekend is welke referentie de ontvanger verwacht--> 
+		</cac:OrderReference>					
+		</cac:OrderLineReference>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="EUR">21.00</cbc:TaxAmount><!--Totale BTW bedrag van de factuurregel-->
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount><!--Totaalbedrag van de factuurregel excl BTW-->
+				<cbc:TaxAmount currencyID="EUR">21.00</cbc:TaxAmount><!-- BTW bedrag van de factuurregel per BTW type-->
+				<cbc:Percent>21.00</cbc:Percent><!-- BTW percentage van de factuurregel-->
+				<cac:TaxCategory>
+					<cbc:Percent>21.00</cbc:Percent><!-- BTW percentage van de factuurregel-->
+					<cac:TaxScheme>
+						<cbc:Name>BTW</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>		
+		<cac:Item>
+			<cbc:Description>Pak potloden 12 stuks 21%</cbc:Description><!--Hier vult u de naam of omschrijving van te factureren goederen of diensten-->
+			<cbc:CatalogueIndicator>false</cbc:CatalogueIndicator>
+			<cbc:Name>Pak potloden 12 stuks 21%</cbc:Name><!--Hier vult u de naam of omschrijving van te factureren goederen of diensten-->
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="EUR">5.00</cbc:PriceAmount><!--stuksprijs van het product-->
+			<cbc:BaseQuantity>1</cbc:BaseQuantity><!--altijd 1 -->
+		</cac:Price>
+	</cac:InvoiceLine>		
+		<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID><!--Regelnummer van de factuur-->
+		<cbc:InvoicedQuantity unitCode="EA">25</cbc:InvoicedQuantity><!--Hier vult u het aantal stuks dat u wilt factureren-->
+		<cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount><!--InvoicedQuantity x PriceAmount (exclusief BTW)-->
+		<cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID><!--Aanbevolen om hier het regelnummer van de order te vullen indien bekend--> 
+		<cac:OrderReference>
+			<cbc:ID>40000695</cbc:ID><!--Hier vult u altijd het ordernummer of de referentie van de factuur. Zorg dat bij u bekend is welke referentie de ontvanger verwacht--> 
+		</cac:OrderReference>					
+		</cac:OrderLineReference>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="EUR">6.00</cbc:TaxAmount><!--Totale BTW bedrag van de factuurregel-->
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount><!--Totaalbedrag van de factuurregel excl BTW-->
+				<cbc:TaxAmount currencyID="EUR">6.00</cbc:TaxAmount><!-- BTW bedrag van de factuurregel per BTW type-->
+				<cbc:Percent>6.00</cbc:Percent><!-- BTW percentage van de factuurregel-->
+				<cac:TaxCategory>
+					<cbc:Percent>6.00</cbc:Percent><!-- BTW percentage van de factuurregel-->
+					<cac:TaxScheme>
+						<cbc:Name>BTW</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>		
+		<cac:Item>
+			<cbc:Description>Pak Snickers 6%</cbc:Description><!--Hier vult u de naam of omschrijving van te factureren goederen of diensten-->
+			<cbc:CatalogueIndicator>false</cbc:CatalogueIndicator>
+			<cbc:Name>Pak Snickers 6%</cbc:Name><!--Hier vult u de naam of omschrijving van te factureren goederen of diensten-->
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="EUR">4.00</cbc:PriceAmount><!--stuksprijs van het product-->
+			<cbc:BaseQuantity>1</cbc:BaseQuantity><!--altijd 1 -->
+		</cac:Price>
+	</cac:InvoiceLine>	
+</doc:Invoice>

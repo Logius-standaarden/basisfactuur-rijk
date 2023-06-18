@@ -11,9 +11,9 @@ var respecConfig = {
   publishDate: "2022-12-13",
   publishVersion: "december 2022",
   title: "Handreiking basisfactuur Rijk",
-  previousPublishVersion: "0.0.1",
-  previousPublishDate: "1970-01-01",
-  previousMaturity: "BP",
+  previousPublishVersion: "(none)",
+  previousPublishDate: "(none)",
+  previousMaturity: "(none)",
   content:
     {
       "handreiking-basisfactuur-rijk": "",
