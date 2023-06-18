@@ -8,12 +8,12 @@ var respecConfig = {
   specType: "HR",
   pubDomain: "ep",
   shortName: "basisfactuur-rijk",
-  publishDate: "2022-12-13",
-  publishVersion: "december 2022",
+  publishDate: "2023-06-18",
+  publishVersion: "v1.0.6",
   title: "Handreiking basisfactuur Rijk",
-  previousPublishVersion: "(none)",
-  previousPublishDate: "(none)",
-  previousMaturity: "(none)",
+  previousPublishVersion: "december 2022",
+  previousPublishDate: "2022-12-13",
+  previousMaturity: "def",
   content:
     {
       "handreiking-basisfactuur-rijk": "",
@@ -77,7 +77,7 @@ var respecConfig = {
   alternateFormats: [
     {
       label: "pdf",
-      uri: "handreiking-basisfactuur-rijk-v1.0.1.pdf",
+      uri: "handreiking-basisfactuur-rijk-v1.0.6.pdf",
     },
   ],
 };
