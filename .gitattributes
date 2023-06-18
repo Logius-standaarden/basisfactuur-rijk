@@ -17,6 +17,6 @@
 /technische-documentatie/README.md        export-ignore
 /handreiking-basisfactuur-rijk.md         export-ignore
 /overzicht-elementen-basisfactuur-rijk.md export-ignore
-/README.md
-/samenvatting.md
-/*.html
+/README.md                                export-ignore
+/samenvatting.md                          export-ignore
+/*.html                                   export-ignore
