@@ -40,7 +40,7 @@ var respecConfig = {
         companyURL: "https://logius.nl/diensten/e-procurement",
       }
     ],
-  github: "https://github.com/Logius-standaarden/ep-basisfactuur-rijk",
+  github: "https://github.com/Logius-standaarden/basisfactuur-rijk",
 
   // overwrite sotdText from organisationConfig
   sotdText: {
