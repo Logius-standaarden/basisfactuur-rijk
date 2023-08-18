@@ -4,6 +4,6 @@ Deze openbare repository is bedoeld om in samenwerkingsverband de _Handreiking b
 
 De volgende ingangen zijn hierbij relevant:
 
-- [Handreiking basisfactuur Rijk (onderhoudsversie)](https://logius-standaarden.github.io/ep-basisfactuur-rijk/)
-- [Handreiking basisfactuur Rijk (statische versie)](https://logius-standaarden.github.io/ep-basisfactuur-rijk/snapshot.html)
+- [Handreiking basisfactuur Rijk (onderhoudsversie)](https://logius-standaarden.github.io/basisfactuur-rijk/)
+- [Handreiking basisfactuur Rijk (statische versie)](https://logius-standaarden.github.io/basisfactuur-rijk/snapshot.html)
 - [Handreiking basisfactuur Rijk (gepubliceerde versie)]() &middot; <small>_(werkende link volgt ná daadwerkelijke 1<sup>e</sup> publicatie)_</small>

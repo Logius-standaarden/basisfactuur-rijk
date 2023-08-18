@@ -5,8 +5,8 @@
   
     Versie basisfactuur Rijk - 1.0.0 (december 2022)
     Datum basisfactuur Rijk  - 14 december 2022
-    Versie schematron        - 0.9.1
-    Datum schematron         - 15 mei 2023
+    Versie schematron        - 0.9.2
+    Datum schematron         - 18 augustus 2023
   
   -->
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -27,7 +27,7 @@
   <pattern id="type-restrictions">
     <rule context="/doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID">
       <!-- BR-NL-BFR-2 - BFR-fout-22  doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID@schemeID (waarde 0190) -->
-      <assert test="@schemeID = '0190'">BR-NL-BFR-2: Het attribuut 'schemeID' van veld 'doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID' moet altijd de waarde '0190' bevatten, niet de gebruikte waarde '<value-of select="@schemeID" />'.</assert>
+      <assert test="@schemeID = '0190'">BR-NL-BFR-2: Het attribuut 'schemeID' van veld 'doc:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID' moet altijd de waarde '0190' (OIN) hebben (huidige waarde: '<value-of select="@schemeID" />').</assert>
     </rule>
     <rule context="/doc:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount">
       <!-- BR-NL-BFR-4 - BFR-fout-37  - /doc:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount@currencyID (waarde gelijk aan 'doc:Invoice/cbc:DocumentCurrencyCode') -->
