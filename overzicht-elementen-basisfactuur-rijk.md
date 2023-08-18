@@ -61,7 +61,8 @@
 |-----|------------------------------|------------|------------------------|-------------|
 | 7.1 | Factuurregelnummer           | Ja         | 1                      |  |
 | 7.2 | Orderregel verwijzing        | Aanbevolen | 1                      | Indien bekend, dan vermelden. Dit zorgt voor een snellere verwerking en betaling. |
-| 7.3 | Gefactureerde hoeveelheid    | Ja         | 10.00                  |  |
+| 7.3 | Naam/omschrijving van de geleverde goederen of diensten | Ja | Insteekhoezen |  |
+| 7.4 | Gefactureerde hoeveelheid    | Ja         | 10.00                  |  |
 | 7.5 | Stuksprijs                   | Ja         | 20.00                  |  |
 | 7.6 | Factuurregelbedrag exclusief BTW | Ja     | 200.00                 | Factuurregelbedrag exclusief BTW = prijs x hoeveelheid. |
 | 7.7 | BTW Percentage               | Ja         | 21                     | Dit kan de waarde 0, 9 of 21 zijn. |
@@ -71,4 +72,4 @@
 
 |     | Gegevensnaam                 | Verplicht  | Voorbeeldvulling       | Opmerkingen |
 |-----|------------------------------|------------|------------------------|-------------|
-| 8.1 | Tijdkaart Verwijzing Optioneel: #tijdkaartregel | Aanbevolen | 43665456#3 | Geef hier het TimeCardID aan van het ontvangen (of verstuurde) tijdkaartbericht waarop de factuurregel is gebaseerd, optioneel gevolgd door een #Tijdkaart-regelnummer
+| 8.1 | Tijdkaart Verwijzing <br />*Optioneel: #tijdkaartregel* | Aanbevolen | 43665456#3 | Geef hier het TimeCardID aan van het ontvangen (of verstuurde) tijdkaartbericht waarop de factuurregel is gebaseerd, optioneel gevolgd door een #Tijdkaart-regelnummer |
