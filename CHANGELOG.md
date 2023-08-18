@@ -9,7 +9,7 @@
 
 ### Changed
 
-- (BOR) Meldingsteksten [schematron](./technische-documentatie/basisfactuur-rijk.sch) aangepast vanwege reviews (v0.9.1 → v0.9.2)
+- (BFR) Meldingsteksten [schematron](./technische-documentatie/basisfactuur-rijk.sch) aangepast vanwege reviews (v0.9.1 → v0.9.2)
 - Logboek van wijzigingen voor schematron samengevoegd met deze [CHANGELOG.md](./CHANGELOG.md). Relevante links aangepast waar nodig.
 - Overbodige prefix `ep` uit de repositorynaam gehaald. Relevante links aangepast waar nodig.
 
