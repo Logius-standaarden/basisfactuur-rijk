@@ -27,17 +27,10 @@
 - (BFR) Technische documentatie toegevoegd - voor de inhoud, zie [technische-documentatie/README.md](./technische-documentatie/README.md).
 - Dit logboek van wijzigingen toegevoegd ([CHANGELOG.md](./CHANGELOG.md)).
 - Algemene [.gitattributes](./.gitattributes) toegevoegd ter ondersteuning van het bepalen van de bestanden voor de technische release.
-- (BFR) Technische documentatie toegevoegd - voor de inhoud, zie [technische-documentatie/README.md](./technische-documentatie/README.md).
-- Dit logboek van wijzigingen toegevoegd ([CHANGELOG.md](./CHANGELOG.md)).
-- Algemene [.gitattributes](./.gitattributes) toegevoegd ter ondersteuning van het bepalen van de bestanden voor de technische release.
 - Algemene [.gitignore](./.gitignore) toegevoegd.
 
 ### Changed
 
-- (BFR) Paragraaf Hulp bij e-factuur sturen naar de Rijksoverheid aangepast.
-- (BFR) Verwijzing naar de technische documentatie aangepast naar de [laatste release](https://github.com/Logius-standaarden/ep-basisfactuur-rijk/releases/latest) van de publicatie;
-- Directory-structuur aangepast om aan te sluiten bij de nieuw toegevoegde technische documentatie.
-- Logboek van wijzigingen voor schematron aangepast aan het format van [Keep a Changelog](https://keepachangelog.com/nl/1.1.0/).
 - (BFR) Paragraaf Hulp bij e-factuur sturen naar de Rijksoverheid aangepast.
 - (BFR) Verwijzing naar de technische documentatie aangepast naar de [laatste release](https://github.com/Logius-standaarden/ep-basisfactuur-rijk/releases/latest) van de publicatie;
 - Directory-structuur aangepast om aan te sluiten bij de nieuw toegevoegde technische documentatie.
@@ -49,28 +42,12 @@
 
 ### Added
 - Logboek van wijzigingen voor schematron toegevoegd.
-- Logboek van wijzigingen voor schematron toegevoegd.
 
 
 ## [v1.0.4] - 2023-05-15
 
 ### Changed
 
-- (BFR) [Schematron](./technische-documentatie/basisfactuur-rijk.sch) geactualiseerd naar versie v0.9.1:
-  - [v0.8.0] - 2023-04-11
-    - Vereenvoudiging tests naar aanleiding van extra tests eerder in de keten.
-  - [v0.8.1] - 2023-04-13
-    - Validatie van optioneel element doc:Invoice/cbc:UBLVersionID verwijderd.
-    - Ontbrekende validatieregel BR-NL-BFR-30 toegevoegd.
-  - [v0.9.0] - 2023-04-14
-    - Volgnummeraanpassingen zodat er nu 4 opeenvolgende meldingsnummers zijn in plaats van op testcase gebaseerde meldingsnummers (19 → 1; 22 → 2; 30 → 3; 37 → 4).
-    - Meldingen zijn iets generieker gemaakt.
-  - [v0.9.1] - 2023-05-15
-    - Alle contexten absoluut gemaakt.
-    - Bij elke validatieregel (BR) kort opgenomen wat de inhoud van de regel behelst. Inclusief de naam van test-xml.
-    - BR-NL-BFR-1 verplaatst pattern id="type-restrictions" naar id="cardinality-redefines".
-    - BR-NL-BFR-3 test vereenvoudigd.
-    - BR-NL-BFR-2 en BR-NL-BFR-4 context vereenvoudigd én extra informatie over de gebruikte waarden opgenomen in de melding.
 - (BFR) [Schematron](./technische-documentatie/basisfactuur-rijk.sch) geactualiseerd naar versie v0.9.1:
   - [v0.8.0] - 2023-04-11
     - Vereenvoudiging tests naar aanleiding van extra tests eerder in de keten.
@@ -100,7 +77,6 @@
 ### Added
 
 - (BFR) Schematron validatiebestand ([basisfactuur-rijk.sch](./technische-documentatie/basisfactuur-rijk.sch)) toegevoegd (v0.7.0).
-- (BFR) Schematron validatiebestand ([basisfactuur-rijk.sch](./technische-documentatie/basisfactuur-rijk.sch)) toegevoegd (v0.7.0).
 
 
 ## [v1.0.1] - 2023-02-14
@@ -110,17 +86,7 @@
 - (BFR) Eerste gereviewde werkversie van de nieuwe publicatievorm voor de <em>Handreiking basisfactuur Rijk</em>, gebaseerd op de eerder gepubliceerde versie van december 2022.
 
 ## Oudere versies zonder wijzigingenlogs
-- (BFR) Eerste gereviewde werkversie van de nieuwe publicatievorm voor de <em>Handreiking basisfactuur Rijk</em>, gebaseerd op de eerder gepubliceerde versie van december 2022.
 
-## Oudere versies zonder wijzigingenlogs
-
-* **[v1.0.0-7] - 2022-12-14**
-* **[v1.0.0-6] - 2021-05-28**
-* **[v1.0.0-5] - 2020-12-22**
-* **[v1.0.0-4] - 2020-10-07**
-* **[v1.0.0-3] - 2020-07-31**
-* **[v1.0.0-2] - 2020-05-07**
-* **[v1.0.0-1] - 2018-01-30**
 * **[v1.0.0-7] - 2022-12-14**
 * **[v1.0.0-6] - 2021-05-28**
 * **[v1.0.0-5] - 2020-12-22**
