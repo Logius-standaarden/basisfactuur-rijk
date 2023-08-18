@@ -7,14 +7,20 @@
 
 ## [v1.0.7] - 2023-08-18
 
+### Added
+
+- (BFR) Ontbrekend element 7.3 (Naam/omschrijving van de geleverde goederen of diensten) in [Overzicht verplichte en optionele elementen voor de basisfactuur Rijk](./overzicht-elementen-basisfactuur-rijk.md) toegevoegd.
+
 ### Changed
 
 - (BFR) Meldingsteksten [schematron](./technische-documentatie/basisfactuur-rijk.sch) aangepast vanwege reviews (v0.9.1 → v0.9.2)
+- (BFR) Typfouten in [Overzicht verplichte en optionele elementen voor de basisfactuur Rijk](./overzicht-elementen-basisfactuur-rijk.md) hersteld.
+- (BFR) Afkortingen EG en TC omgezet naar de volledige termen in [de configuratie](/js/config.js).
 - Logboek van wijzigingen voor schematron samengevoegd met deze [CHANGELOG.md](./CHANGELOG.md). Relevante links aangepast waar nodig.
 - Overbodige prefix `ep` uit de repositorynaam gehaald. Relevante links aangepast waar nodig.
 
 
-## [v1.0.6] - 2023-06-19
+## [v1.0.6] - 2023-06-18
 
 ### Added
 
