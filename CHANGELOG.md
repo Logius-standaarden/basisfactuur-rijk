@@ -5,6 +5,13 @@
 > _Inhoudelijke wijzigingen van de basisfactuur Rijk worden voorafgegaan door (BFR)._
 
 
+## [v1.0.8] - 2023-08-29
+
+### Added
+
+- (BFR) In alle `assert` elementen de attributen `id` (ten behoeve van het melding-ID) en `flag` (ten behoeve van het severity level) toegevoegd in [Schematron BFR](./technische-documentatie/basisfactuur-rijk.sch) (v0.9.2 → v0.10.0).
+
+
 ## [v1.0.7] - 2023-08-18
 
 ### Added
