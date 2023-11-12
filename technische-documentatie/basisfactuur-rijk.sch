@@ -5,8 +5,8 @@
   
     Versie basisfactuur Rijk - 1.0.0 (december 2022)
     Datum basisfactuur Rijk  - 14 december 2022
-    Versie schematron        - 0.10.0
-    Datum schematron         - 29 augustus 2023
+    Versie schematron        - 0.10.1
+    Datum schematron         - 12 november 2023
   
   -->
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -21,7 +21,7 @@
     </rule>
     <rule context="/doc:Invoice">
       <!-- BR-NL-BFR-3 - BFR-fout-30 - doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID (verplicht) -->
-      <assert id="BR-NL-BFR-3" test="string-length(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) gt 0" flag="fatal">BR-NL-BFR-3: Het veld 'doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID' is verplicht (Basisfactuur 4.1 - IBAN).</assert>
+      <assert id="BR-NL-BFR-3" test="count(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID) gt 0" flag="fatal">BR-NL-BFR-3: Het veld 'doc:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID' is verplicht (Basisfactuur 4.1 - IBAN).</assert>
     </rule>
   </pattern>
   <pattern id="type-restrictions">

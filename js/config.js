@@ -8,11 +8,11 @@ var respecConfig = {
   specType: "HR",
   pubDomain: "ep",
   shortName: "basisfactuur-rijk",
-  publishDate: "2023-08-29",
-  publishVersion: "v1.0.8",
+  publishDate: "2023-11-12",
+  publishVersion: "v1.0.9",
   title: "Handreiking basisfactuur Rijk",
-  previousPublishVersion: "v1.0.7",
-  previousPublishDate: "2023-08-18",
+  previousPublishVersion: "v1.0.8",
+  previousPublishDate: "2023-08-29",
   previousMaturity: "WV",
   content:
     {
