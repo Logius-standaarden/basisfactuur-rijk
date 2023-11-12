@@ -5,6 +5,12 @@
 > _Inhoudelijke wijzigingen van de basisfactuur Rijk worden voorafgegaan door (BFR)._
 
 
+## [v1.0.9] - 2023-11-12
+
+### Fixed
+
+- (BFR) Issue #22 opgelost door BR-NL-BFR-3 niet te testen middels `string-length`, maar middels `count` in [Schematron BFR](./technische-documentatie/basisfactuur-rijk.sch) (v0.10.0 → v0.10.1).
+
 ## [v1.0.8] - 2023-08-29
 
 ### Added
