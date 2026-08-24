@@ -1,5 +1,8 @@
 # Handreiking basisfactuur Rijk
 
+> [!WARNING]
+> Deze handreiking wordt inmiddels onderhouden op https://logius.semantic-treehouse.nl/
+
 Deze openbare repository is bedoeld om in samenwerkingsverband de _Handreiking basisfactuur Rijk_ te onderhouden en te publiceren.
 
 De volgende ingangen zijn hierbij relevant:
